@@ -403,6 +403,9 @@ section .contenedor-masproductos {
   body div .nosotros {
     font-size: 20px;
   }
+  body iframe {
+    width: auto;
+  }
   body .texto-contacto {
     font-size: 30px;
   }

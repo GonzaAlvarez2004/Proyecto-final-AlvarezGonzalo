@@ -54,7 +54,9 @@ body{
                     font-size: 20px;
                 }
             }
-            
+            iframe{
+                width: auto;
+            }
             /*contacto*/
             .texto-contacto{
                 font-size: $fontmediaq;
