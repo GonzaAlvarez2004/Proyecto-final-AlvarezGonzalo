@@ -1,0 +1,28 @@
+/*GENERALES*/
+@import "generales" ;
+
+/*VARIABLES, mixin,extend y condicionales*/
+@import "variables_mixin_extend";
+
+
+@import "body_header_footer";
+
+@import "index";
+
+/*PRODUCTOS*/
+@import "productos";
+
+/*ACERCA DE NOSOTROS*/
+@import "nosotros";
+
+/*CONTACTO*/
+/*formulario*/
+@import "contacto";
+
+
+
+/*CARRITO */
+@import "carrito";
+
+/*MEDIA QUARIES*/
+@import "mediaq";

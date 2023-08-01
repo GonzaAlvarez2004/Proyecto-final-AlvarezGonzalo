@@ -1,0 +1,41 @@
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    .logo{
+        @include width-height(250px, 250px);
+        margin-bottom: 20px;
+        :hover{
+            @extend .hover;
+        }
+    }
+    nav{
+        li{
+            margin-left: 30px;
+            :hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+            ul img{
+                @include width-height(60px, 60px);
+            }
+        }
+    } 
+}
+
+/*FOOTER*/
+footer{
+    background-color: $background-color;
+    img{
+        @include width-height(100px, 100px);
+        text-align: left;
+        display:inline ;
+    }
+    div{
+        .footer-a{
+            @extend .center-flex;
+            text-decoration: none;
+        }
+    }
+}

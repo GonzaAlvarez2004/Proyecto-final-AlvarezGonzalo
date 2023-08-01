@@ -1,0 +1,22 @@
+/*INDEX*/
+
+main{
+    section .presentacion{
+            text-align: center;
+            @include margin(50px,20px,20px, 50px);
+            font-size: 40px;
+    }
+        & .fotos{
+            @extend .center-flex;
+            :hover{
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+        }
+        & .fotos img{
+            @include margin(150px,0px, 80px, 100px);
+            padding: 5px;
+            @include width-height(400px, 400px);
+        }
+    }
+

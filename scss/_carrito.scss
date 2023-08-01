@@ -1,0 +1,94 @@
+main{
+    .textos-carritos{
+        @include margin(40px, auto, auto, 50px);
+        text-align: center;
+        padding-left: 10px;
+    }
+    .h1-carrito{
+        @extend .center-flex;
+        margin-bottom: 80px;
+    }
+    }
+    .contenedor-carrito{
+        display: grid;
+        @include margin(20px, auto, 30px, 30px);
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 2px solid rgb(83, 37, 37);
+        grid-template-columns: repeat(8, 1fr);
+        .carrito-p1{
+            grid-column: 2/3;
+            text-align: center;
+            margin: 0;
+        }
+        .carrito-p2cant{
+            grid-column: 6/7;
+            text-align: center;
+            margin: 0;
+        }
+        .carrito-p2{
+            grid-column: 3/4;
+            text-align: center;
+            margin: 0;
+        }
+        .carrito-p3{
+            grid-column: 7/8;
+            text-align: center;
+            margin: 0;
+        }
+        
+        .carrito-img{
+            grid-column: 2/3;
+            justify-self: center;
+            width: 100%;
+        }
+        .carrito-input{
+            grid-column: 6/7;
+            width: 30%;
+            justify-self: center;
+            text-align: center;
+        }
+        .carrito-p4{
+            margin: 0;
+            text-align: center;
+        }
+        .carrito-total{
+            grid-column: 7/8;
+        }
+        .carrito-p{
+            grid-column: 4/6;
+            justify-self: right;
+        }
+        .carrito-boton{
+            margin-left: 20px;
+            width: 80%;
+            min-width: min-content;
+            border-radius: 10px;
+            color: white;
+            padding: 10px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            box-shadow: inset 2px 2px 5px rgb(22, 73, 121);
+            grid-column: 6/8;
+            justify-self: right;
+        }
+    }
+    section{
+        .texto-mas-productos{
+            @extend .center-flex;
+            margin-bottom: 20px;
+            @include margin(70px, auto, auto, 70px)
+        }
+        .contenedor-masproductos{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            justify-items: center;
+            @include margin(10px, auto, 10px, 150px);
+
+            :hover{
+                @extend .hover;
+            }
+        }
+    }

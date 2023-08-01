@@ -1,0 +1,103 @@
+/*VARIABLES*/
+$background-color: #E57C23;
+$colorboton: linear-gradient(to right, rgb(250, 106, 22), rgb(236, 47, 0));
+$colornavidad: #85A389/*rgb(96, 160, 107)*/;
+$fontmediaq: 30px;
+
+/*MIXIN*/
+@mixin grid($display, $columnas){
+    display: $display;
+    grid-template-columns: $columnas;
+}
+
+
+@mixin margin($top, $right, $left, $bottom){
+    margin-top: $top;
+    margin-right: $right;
+    margin-left: $left;
+    margin-bottom: $bottom;
+}
+
+@mixin width-height($width, $height){
+    width: $width;
+    height: $height;
+}
+
+
+/* EXTEND*/
+.center-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.min-max{
+    min-height:100px ;
+    max-height:200px ;
+    min-width: 100%;
+}
+
+.hover{
+    box-shadow: 0px rgba(255, 255, 255, 0.2);
+    transform: translateY(-3%);
+}
+
+/*CONDICIONALES*/
+$fondo: tkot;
+
+@if $fondo == tkot{
+    body{
+        background-image: url(../img/12_adsery12-min.jpg);
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+}
+
+@else if $fondo == navidad {
+    body{
+        background-image: url(../img//christmas-g951fb181a_1280-min.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: rgb(0, 0, 0);
+        main{
+            .producto{
+                background-color:$colornavidad;
+            }
+            .nombres{
+                background-color: rgb(253, 75, 75);
+            }
+            div{
+                .nosotros-pregunta{
+                    border: 2px solid $colornavidad;
+                    border-radius: 150px;
+                }
+            }
+    }
+        section{
+            form{
+                background-color: $colornavidad;
+            }
+        }
+    footer{
+        background-color: $colornavidad;
+        .footer-a{
+            color: black;
+        }
+    }
+}
+}
+
+
+/*MAPS*/
+$background-boton:(
+    boton-formulario: #ff7b00,
+    botoncarrito: #03001C
+    );
+
+#boton-form{
+    background-color: map-get($background-boton, boton-formulario );
+}
+
+#boton-carrito{
+    background-color: map-get( $background-boton, botoncarrito );
+}

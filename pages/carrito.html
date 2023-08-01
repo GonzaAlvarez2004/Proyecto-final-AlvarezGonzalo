@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="shortcut icon" href="../img/tkot logo 2.0-min.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta name="description" content="No te olvides de comprar nuestros productos en este carrito y ademas agrega mas productos al mismo">
+    <meta name="keywords" content="The King Of Technology Casanova, tkot, auriculares, mouse, teclado , electronica">
+</head>
+<body data-aos="fade-down">
+    <header>
+            <a href="../index.html" class="logo"><img class="logo" src="../img/tkot logo 2.0-min.png" alt="Logo The tkot"></a>
+        <!--Menu-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INICIO</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">ACERCA DE NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/carrito.html"><img src="../img/icons8-carrito-de-compras-24.png" alt="carrito"></a>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    </header>
+        <main class="textos-carrito container">
+            <!--titulo carrtito-->
+            <div class="h1-carrito">
+                <h1 class="carrito-h1">Carrito de Compras</h1>
+            </div>
+            <!-- Contenedor de carrito-->
+            <div class="contenedor-carrito container">
+                <p class="carrito-p1">Producto</p>
+                <p class="carrito-p2cant">Cantidad</p>
+                <p class="carrito-p3">Total</p>
+            </div>
+        <div class="contenedor-carrito container">
+            <img class="carrito-img" src="../img/tk-10-min.jpg" alt="tk-a10">
+        <div class="carrito-p2">
+            <p class="carrito-p2">Auriculares TKOT T-a10</p>
+            <p class="carrito-p2">$5.000</p>
+        </div>
+            <input class="carrito-input" type="number">
+            <p class="carrito-p4">$5.000</p>
+        </div>
+        <div class="contenedor-carrito container">
+            <h3 class="carrito-total">TOTAL: $5.000</h3>
+            <p class="carrito-p">Gastos de envio calculados al finalizar la compra</p>
+            <input id="boton-carrito" class="carrito-boton" type="submit" value="FINALIZAR COMPRA"> 
+        </div>
+        <!--seccion de mas productos-->
+        <section>
+            <div class="texto-mas-productos">
+                <h2 class="mas-productos">Mas Productos</h2>
+            </div>
+            <div class="contenedor-masproductos">
+                <div class="card bg-transparent border-black " style="width: 18rem;">
+                    <img src="../img/tk-m01-min.png" class="card-img-top" alt="mouse tkot m-01">
+                    <div class="card-body">
+                        <h5 class="card-title">MOUSE TKOT M-01</h5>
+                        <p class="card-text">$2.000</p>
+                        <a href="../pages/carrito.html" class="btn btn-dark">COMPRAR</a>
+                    </div>
+                </div>
+                    <div class="card bg-transparent border-black" style="width: 18rem;">
+                        <img src="../img/tk t500-min.jpeg" class="card-img-top" alt="teclado tkot t500">
+                        <div class="card-body">
+                            <h5 class="card-title">TECLADO TKOT T-500</h5>
+                            <p class="card-text">$7.990</p>
+                            <a href="../pages/carrito.html" class="btn btn-dark">COMPRAR</a>
+                        </div>
+                    </div>
+                    <div class="card bg-transparent border-black" style="width: 18rem;">
+                        <img src="../img/tk-a30-min.jpg" class="card-img-top" alt="Auricular tkot tk-a30">
+                    <div class="card-body">
+                        <h5 class="card-title">AURICULAR TKOT A-30</h5>
+                        <p class="card-text">$5.000</p>
+                        <a href="../pages/carrito.html" class="btn btn-dark">COMPRAR</a>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!--Logo y año-->
+        <img src="../img/tkot logo 2.0-min.png" alt="logo tkot" >
+        <div>
+            <h5 class="footer-a">Redes Sociales</h5>
+            <a class="footer-a" href="https://wa.link/cslt3h">Whatsapp</a>
+            <a class="footer-a" href="https://www.instagram.com/tkot.casanova/">Instagram</a>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

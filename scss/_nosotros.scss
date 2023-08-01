@@ -1,0 +1,61 @@
+main{
+    div{
+        #carouselExample{
+            margin-top: 20px;
+        }
+    }
+    div{
+        & .quien-somos{
+            text-align: center;
+            @include margin(100px,20px,20px, 0px);
+            font-size: 50px;
+            text-decoration: double;
+        }
+    }
+    div{
+        .nosotros-pregunta{
+            @include margin(150px, 50px, 50px, 10px);
+            text-align: center;
+            font-size: 30px;
+            border: 2px solid rgb(189, 67, 67);
+            border-radius: 150px;
+            padding: 10px;
+            @extend .center-flex;
+        }
+        .nosotros{
+            @include margin(10px, 50px, 50px, 0px);
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 5%;
+            & h2{
+                text-decoration: underline;
+                margin-top: 5%;
+            }
+            & p{
+                margin-top: 2%;
+            }
+        }
+        .redes-sociales{
+            @extend .center-flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            :hover{
+                @extend .hover;
+            }
+            & a{
+                text-align: center;
+                & img{
+                    @include width-height(250px, 250px);
+                    margin-top: 2%;
+                    @extend .center-flex;
+                }
+            }
+        }
+        .iframe{
+            @extend .center-flex;
+            align-items: center;
+            @include margin (20px, auto, auto, 20px);
+        }
+    }
+}

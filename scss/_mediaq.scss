@@ -1,0 +1,96 @@
+/*formulario rensponsive movil*/
+$vista: mobile;
+$fontsize: 70px;
+
+body{
+    @if $vista == desktop{
+        @media only screen and (min-width: 1024px){
+            h1: $fontsize;
+        }
+    }
+    @else if $vista == mobile {
+        @media (min-width:320px) and (max-width:480px){
+            /*generales*/
+            .logo{
+                @include width-height(150px, 150px);
+            }
+            /*index*/
+            main{
+                section .presentacion{
+                    font-size: $fontmediaq;
+                }
+                    & .fotos{
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        justify-items: center;
+                    }
+                    & .fotos img{
+                        @include width-height(200px, 200px);
+                        @include margin(100px, auto, auto, 100px);
+                    }
+                    }
+                
+            /*productos*/
+            .producto{
+                width: 65%;
+            }
+            .nombretkot{
+                font-size: $fontmediaq;
+            }
+            .nombres{
+                font-size: $fontmediaq;
+            }
+            /*acerca de nosotros*/
+            div{
+                & .quien-somos{
+                    font-size: $fontmediaq;
+                }
+            }
+            div{
+                .nosotros-pregunta{
+                    font-size: 30px;
+                }
+                .nosotros{
+                    font-size: 20px;
+                }
+            }
+            
+            /*contacto*/
+            .texto-contacto{
+                font-size: $fontmediaq;
+            }
+            form{
+                    width:85%;
+                }
+            /*CARRITO*/   
+            main{        
+            .contenedor-carrito{
+                margin-left: 0px;
+                .carrito-p2{
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+                .carrito-img{
+                    width: 90px;
+                }
+                .carrito-input{
+                    width: 80%;
+                }
+                .carrito-boton{
+                    width: 70%;
+                    font-size: 15px;
+                }
+            }
+        }
+            section{
+                div{
+                    .card{
+                        margin-bottom: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
