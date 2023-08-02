@@ -41,9 +41,6 @@ body{
                 font-size: $fontmediaq;
             }
             /*acerca de nosotros*/
-            .main-nosotros{
-            overflow:hidden;
-        }
             div{
                 & .quien-somos{
                     font-size: $fontmediaq;
@@ -51,21 +48,30 @@ body{
             }
             div{
                 .nosotros-pregunta{
-                    font-size: 30px;
+                    font-size: 25px;
                 }
                 .nosotros{
                     font-size: 20px;
                 }
             }
-            iframe{
-                width: 200px;
-                margin: auto;
-            }
-            .redes-sociales{
-                &img{
-                    width: 80px;
+
+            main{
+                div{
+                    .redes-sociales{
+                        a{
+                            img{
+                                width: 100px;
+                                height: 100px;
+                            }
+                        }
+                    }
                 }
             }
+            iframe{
+                width: auto;
+                margin: auto;
+            }
+            
             /*contacto*/
             .texto-contacto{
                 font-size: $fontmediaq;

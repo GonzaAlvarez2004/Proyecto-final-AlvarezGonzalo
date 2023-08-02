@@ -169,7 +169,7 @@ main div .quien-somos {
   text-decoration: double;
 }
 main div .nosotros-pregunta {
-  margin-top: 150px;
+  margin-top: 100px;
   margin-right: 50px;
   margin-left: 50px;
   margin-bottom: 10px;
@@ -394,24 +394,22 @@ section .contenedor-masproductos {
   body .nombres {
     font-size: 30px;
   }
-  body .main-nosotros {
-    overflow: hidden;
-  }
   body div .quien-somos {
     font-size: 30px;
   }
   body div .nosotros-pregunta {
-    font-size: 30px;
+    font-size: 25px;
   }
   body div .nosotros {
     font-size: 20px;
   }
-  body iframe {
-    width: 200px;
-    margin: auto;
+  body main div .redes-sociales a img {
+    width: 100px;
+    height: 100px;
   }
-  body .redes-socialesimg {
-    width: 80px;
+  body iframe {
+    width: auto;
+    margin: auto;
   }
   body .texto-contacto {
     font-size: 30px;
