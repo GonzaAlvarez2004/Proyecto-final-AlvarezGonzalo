@@ -55,7 +55,7 @@ main{
         .iframe{
             @extend .center-flex;
             align-items: center;
-            @include margin (20px, auto, auto, 20px);
+            @include margin (10px, auto, auto, 20px);
         }
     }
 }

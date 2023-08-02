@@ -210,7 +210,7 @@ main div .redes-sociales a img {
 }
 main div .iframe {
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
@@ -362,6 +362,22 @@ section .contenedor-masproductos {
     /*index*/
     /*productos*/
     /*acerca de nosotros*/
+    /*div{
+        .carousel-inner{
+            margin: auto;
+            display: none;
+            width: 0%;
+            overflow: hidden;
+        }
+        .carousel-control-next{
+            width: 0;
+            margin: auto;
+        }
+        .carousel-control-prev{
+            width: 0;
+            margin: auto;
+        }
+    }*/
     /*contacto*/
     /*CARRITO*/
   }
@@ -394,6 +410,9 @@ section .contenedor-masproductos {
   body .nombres {
     font-size: 30px;
   }
+  body main main-nostros {
+    overflow: hidden;
+  }
   body div .quien-somos {
     font-size: 30px;
   }
@@ -404,7 +423,11 @@ section .contenedor-masproductos {
     font-size: 20px;
   }
   body iframe {
-    width: auto;
+    width: 200px;
+    margin: auto;
+  }
+  body .redes-socialesimg {
+    width: 80px;
   }
   body .texto-contacto {
     font-size: 30px;
@@ -419,11 +442,21 @@ section .contenedor-masproductos {
     margin-right: 5px;
     margin-left: 5px;
   }
+  body main .contenedor-carrito .carrito-p2-cant {
+    margin-left: 5px;
+  }
+  body main .contenedor-carrito .carrito-p3 {
+    grid-column: 8/8;
+  }
+  body main .contenedor-carrito .carrito-p4 {
+    grid-column: 8/8;
+  }
   body main .contenedor-carrito .carrito-img {
     width: 90px;
   }
   body main .contenedor-carrito .carrito-input {
-    width: 80%;
+    width: 90%;
+    margin-right: 5px;
   }
   body main .contenedor-carrito .carrito-boton {
     width: 70%;
@@ -431,6 +464,7 @@ section .contenedor-masproductos {
   }
   body section div .card {
     margin-bottom: 100px;
+    margin-right: 10px;
   }
 }
 

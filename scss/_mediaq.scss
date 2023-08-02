@@ -41,6 +41,27 @@ body{
                 font-size: $fontmediaq;
             }
             /*acerca de nosotros*/
+            main{
+            main-nostros{
+            overflow: hidden;
+            }
+        }
+            /*div{
+                .carousel-inner{
+                    margin: auto;
+                    display: none;
+                    width: 0%;
+                    overflow: hidden;
+                }
+                .carousel-control-next{
+                    width: 0;
+                    margin: auto;
+                }
+                .carousel-control-prev{
+                    width: 0;
+                    margin: auto;
+                }
+            }*/
             div{
                 & .quien-somos{
                     font-size: $fontmediaq;
@@ -55,7 +76,13 @@ body{
                 }
             }
             iframe{
-                width: auto;
+                width: 200px;
+                margin: auto;
+            }
+            .redes-sociales{
+                &img{
+                    width: 80px;
+                }
             }
             /*contacto*/
             .texto-contacto{
@@ -72,11 +99,22 @@ body{
                     margin-right: 5px;
                     margin-left: 5px;
                 }
+                .carrito-p2-cant{
+                    margin-left: 5px;
+                }
+                .carrito-p3{
+                    grid-column: 8/8;
+                }
+                .carrito-p4{
+                    grid-column: 8/8; 
+                    }
+                
                 .carrito-img{
                     width: 90px;
                 }
                 .carrito-input{
-                    width: 80%;
+                    width: 90%;
+                    margin-right: 5px;
                 }
                 .carrito-boton{
                     width: 70%;
@@ -88,11 +126,13 @@ body{
                 div{
                     .card{
                         margin-bottom: 100px;
+                        margin-right: 10px;
                     }
                 }
             }
         }
     }
 }
+
 
 
