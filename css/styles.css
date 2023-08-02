@@ -362,22 +362,6 @@ section .contenedor-masproductos {
     /*index*/
     /*productos*/
     /*acerca de nosotros*/
-    /*div{
-        .carousel-inner{
-            margin: auto;
-            display: none;
-            width: 0%;
-            overflow: hidden;
-        }
-        .carousel-control-next{
-            width: 0;
-            margin: auto;
-        }
-        .carousel-control-prev{
-            width: 0;
-            margin: auto;
-        }
-    }*/
     /*contacto*/
     /*CARRITO*/
   }
@@ -410,7 +394,7 @@ section .contenedor-masproductos {
   body .nombres {
     font-size: 30px;
   }
-  body main main-nostros {
+  body .main-nosotros {
     overflow: hidden;
   }
   body div .quien-somos {
